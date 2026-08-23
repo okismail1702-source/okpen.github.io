@@ -1,0 +1,30 @@
+:root {
+  --ink: #1d1d1f;
+  --paper: #f7f5ef;
+  --accent: #e8572a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+main { max-width: 900px; margin: 0 auto; padding: 72px 28px 48px; }
+
+.hero { min-height: 56vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.eyebrow { margin: 0 0 12px; color: var(--accent); font-size: .82rem; font-weight: bold; letter-spacing: .12em; }
+h1 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.7rem, 11vw, 7.4rem); line-height: .9; letter-spacing: -.065em; }
+h2 { font-size: 1rem; margin: 0 0 12px; text-transform: uppercase; letter-spacing: .08em; }
+.intro, .about p { max-width: 590px; font-size: 1.2rem; }
+.button { display: inline-block; margin-top: 10px; padding: 12px 18px; color: white; background: var(--ink); text-decoration: none; font-weight: bold; }
+.button:hover { background: var(--accent); }
+.about, .links { border-top: 1px solid #c9c4b8; padding: 32px 0; }
+.links a { display: block; width: fit-content; margin: 8px 0; color: var(--ink); font-size: 1.1rem; }
+footer { padding: 28px; text-align: center; font-size: .85rem; color: #666; }
+
+@media (max-width: 500px) { main { padding-top: 48px; } .intro, .about p { font-size: 1.05rem; } }
